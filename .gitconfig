@@ -1,0 +1,47 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	email = vieuxchameau@chameau.fake
+	name = VieuxChameau
+
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	s = status -s
+	bra = branch -a
+	brr = branch -r
+	amend = commit --amend
+	unadd = rm -r --cached
+	hundo = reset --hard HEAD^
+	wd = diff --word-diff
+	ws = show --word-diff
+	do = diff ORIG_HEAD HEAD
+	staged = diff --cached
+	changes = diff --name-status -r
+	ds = diff --stat -r
+	lg = log --color --graph --name-only --pretty=format:'%Cred%h%Creset %C(bold blue)[%an]%Creset :%C(yellow)%d%Creset %s %Cgreen(%ad)%Creset' --abbrev-commit --date=relative
+[branch]
+	autosetuprebase = always
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = false
+	keepTemporaries = false
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+[mergetool "meld"]
+	keepBackup = false
+[push]
+[push]
+	default = current
+[core]
+	autocrlf = input
+[rerere]
+	enabled = true
