@@ -3,7 +3,7 @@
 	status = auto
 	branch = auto
 [user]
-	email = vieuxchameau@chameau.fake
+	email = VieuxChameau@users.noreply.github.com
 	name = VieuxChameau
 
 [alias]
@@ -38,10 +38,13 @@
 	tool = meld
 [mergetool "meld"]
 	keepBackup = false
-[push]
+[pull]
+	rebase = preserve
 [push]
 	default = current
 [core]
 	autocrlf = input
 [rerere]
 	enabled = true
+[status]
+	showUntrackedFiles = all
