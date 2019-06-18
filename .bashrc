@@ -32,9 +32,6 @@ export GIT_PS1_SHOWUPSTREAM="verbose"
 export PS1='[\[\033[1;35m\]\w$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
 
 
-export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:MaxPermSize=256m"
-
-
 export FIGNORE=.svn
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH

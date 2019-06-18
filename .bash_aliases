@@ -16,6 +16,13 @@ alias df='df -h'
 alias lf='ls -Gl | grep ^d' #Only list directories
 alias lsd='ls -Gal | grep ^d' #Only list directories, including hidden ones
 
+generatePassWord() {
+    for run in {1..20}; do openssl rand -base64 ${1:-32}; done
+}
+
+alias genPassword='generatePassWord'
+
+
 # thanks to:  http://blog.blindgaenger.net/colorize_maven_output.html
 # and: http://johannes.jakeapp.com/blog/category/fun-with-linux/200901/maven-colorized
 # Colorize Maven Output
